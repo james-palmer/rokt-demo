@@ -70,3 +70,17 @@
     margin-top: 3em;
     margin-bottom: 2em;
   }
+
+  #addToCalendar {
+    position: absolute; 
+    right: 5vw; 
+    bottom: 1vh
+  }
+
+  @media (min-width: 768px){
+    #addToCalendar {
+      position: absolute; 
+      right: 15vw; 
+      bottom: 10vh
+    }
+  }
