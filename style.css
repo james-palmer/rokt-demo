@@ -1,0 +1,72 @@
+.demo {
+    background-color: #343A40;
+    background-image: url("Images/Screenshot 2020-10-13 at 14.45.30.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  *, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  }
+   
+  body {
+    font: 100% sans-serif;
+    margin: 0em;
+    background-color: #f3f4f5;
+    color: #666;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    }
+  
+  h2{
+   color:#cfd1d1;
+   text-align: center;
+   font-size: 1em;
+    position: relative;
+  }
+  
+  a {
+    color: white !important;
+  }
+  
+  a:focus,
+  a:hover {
+    color: #22A39F;
+  }
+  
+  a:link {
+    color: #22A39F;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.8;
+    margin-top: 0em;
+    text-align: left;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .right-backround-img{
+    position: absolute;
+    top:0px;
+    right: 0px;  
+  }
+  
+  hr {
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
