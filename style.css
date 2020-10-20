@@ -18,7 +18,6 @@
    
   body {
     font: 100% sans-serif;
-    margin: 0em;
     background-color: #f3f4f5;
     color: #666;
   }
@@ -72,15 +71,17 @@
   }
 
   .addToCalendar {
-    position: absolute; 
-    right: 5vw; 
-    bottom: 1vh
+
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: .5vh;
+    left: calc((100vw - 289px)/2)!important;
   }
 
   @media (min-width: 768px){
-    .addToCalendar {
-      position: absolute; 
-      right: 15vw; 
-      bottom: 10vh
+    .addToCalendar {    
+      bottom: 5vh
     }
   }
