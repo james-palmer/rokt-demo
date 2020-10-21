@@ -1,16 +1,4 @@
-.demo {
-    background-color: #343A40;
-    background-image: url("Images/Screenshot 2020-10-13 at 14.45.30.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
-    height: 100vh;
-    width: 100%;
-  }
+
 
 
 
@@ -20,12 +8,13 @@
    
   body {
     font: 100% sans-serif;
-    background-color: #f3f4f5;
+    background-color: #25211F;
     color: #666;
   }
   
   h1, h2, h3 {
     font-family: 'Lato', sans-serif;
+    color: white;
     }
   
   h2{
@@ -70,6 +59,24 @@
     border-bottom: none;
     margin-top: 3em;
     margin-bottom: 2em;
+  }
+
+  #contents li {
+    max-width: 20%;
+  }
+
+  .ClickFrenzydemo {
+    background-color: #343A40;
+    background-image: url("Images/Screenshot 2020-10-13 at 14.45.30.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
   }
 
   .ClickFrenzyCTA {
