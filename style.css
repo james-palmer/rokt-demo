@@ -65,6 +65,13 @@
     max-width: 20%;
   }
 
+  #connector {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 40vw;
+  }
+
   .ClickFrenzydemo {
     background-color: #343A40;
     background-image: url("Images/Screenshot 2020-10-13 at 14.45.30.png");
