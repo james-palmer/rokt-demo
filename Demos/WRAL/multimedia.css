@@ -1,0 +1,509 @@
+.wral-mm-embed
+{
+    overflow: hidden;
+}
+
+.wral-media-player {
+    outline: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.wral-media-player .video-js {
+    width: 100%;
+    height: auto;
+}
+
+.wral-media-player .video-js .vjs-big-play-button {
+    margin-left: -.75em;
+    width: 1.5em;
+}
+
+.fade-out {
+    opacity:0;
+}
+
+.vjs-big-play-button:before, .vjs-big-play-button .vjs-icon-placeholder:before {
+    background: url("ico-play-small-white-100.png") no-repeat !important;
+    background-size: contain !important;
+    content:"" !important;
+}
+
+.wral-media-player .video-js .vjs-big-play-button:focus {
+    outline: 0;
+}
+
+.wral-media-player .video-js canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.wral-media-player .no-flash .VPAID-container {
+    display: none;
+}
+
+/*safari only hack*/
+_::-webkit-full-page-media, _:future, :root .VPAID-container {
+    display: block !important;
+}
+
+
+.wral-media-player aside.vjs-social-share {
+    z-index: 1;
+}
+
+@media screen and (max-width: 400px) {
+    .wral-media-player .vjs-ads-label {
+        display: none !important;
+    }
+}
+
+.mm-poster-placeholder {
+    width: 100%;
+    cursor: pointer;
+    /*max-height: 170px;*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
+}
+
+.mm-poster-placeholder .mm-poster-image {
+    width: 100%;
+    min-height: 169px;
+}
+
+.mm-poster-placeholder .mm-poster-play {
+    position: absolute;
+    top: 41%;
+    left: 44%;
+    width: 10%;
+}
+
+.mm-poster-placeholder .mm-poster-headline {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 45px;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    display: table;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mm-poster-placeholder .mm-poster-headline > div{
+    height: 45px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    padding: 7px 20px;
+}
+
+.vjs-big-play-button {
+    background: none !important;
+    border: none !important;
+}
+
+.vjs-play-button-static-image {
+    position: absolute;
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+    bottom: 40%;
+    right: 135px;
+    cursor: pointer;
+}
+
+.vjs-poster {
+    outline: 0;
+}
+
+.vjs-title-overlay {
+    background-color: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    bottom: 0;
+    padding: 7px 20px;
+    text-align: center;
+    font-size: 2.1em;
+    opacity: 1;
+    visibility: visible;
+}
+
+.vjs-title-overlay.static-image-title-overlay
+{
+    padding: 0px 0px 3px 0px;
+    font-size: 1.15em;
+    color: #fff;
+}
+
+@media screen and (min-width: 850px) {
+    .vjs-title-overlay.static-image-title-overlay
+    {
+        bottom: 0px;
+    }
+}
+
+.vjs-has-started .vjs-title-overlay {
+    opacity: 0;
+    visibility: hidden;
+
+    -webkit-transition: visibility .1s,opacity .1s;
+    -moz-transition: visibility .1s,opacity .1s;
+    -o-transition: visibility .1s,opacity .1s;
+    transition: visibility .1s,opacity .1s;
+}
+
+.wide-video-player.vjs-has-started.vjs-playing:not(.vjs-ad-playing).vjs-user-active .vjs-title-overlay,
+.wide-video-player.vjs-has-started.vjs-paused:not(.vjs-ad-playing) .vjs-title-overlay{
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px;
+}
+
+.video-js {
+    padding-top: 56.26% !important;
+}
+
+.vjs-fullscreen {
+    padding-top: 0px !important;
+}
+
+.vjs-poster {
+    position: absolute;
+    bottom: 0;
+}
+
+.vjs-social-share {
+    z-index: 10;
+}
+
+.vjs-vpaid-ad .vjs-remaining-time {
+    display: flex;
+    flex: auto;
+    content: '';
+}
+
+.vjs-vpaid-ad .vjs-remaining-time-display {
+    display: none;
+}
+
+.vjs-error-display .vjs-modal-dialog-content {
+    padding-top: 60px;
+}
+
+/*
+DO NOT set the swf object (div, object, etc) to display none
+since the browser will not make network requests for elements
+that are not displayed on the page. The reason here is that the
+VPAID SWF code won't initialize when the .swf file is not requested.
+*/
+#vpaid_video_flash_tester_el {
+    display: none !important;
+}
+
+.wral-media-player .vjs-live-display {
+    background-color: #d0202b;
+    padding: 0 10px;
+    display: none;
+}
+
+.wral-media-player .vjs-live .vjs-live-display {
+    display: block;
+}
+
+html.lt-ie10 .vjs-fullscreen-control,
+html.ie10 .vjs-fullscreen-control {
+    display: none !important;
+}
+
+.vjs-default-skin.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.wral-media-player .embed-window {
+    z-index: 1;
+}
+
+/* IE10 fix for clickthrough tracker */
+a.vast-blocker {
+    background-image: url("");
+}
+
+.error-window {
+    position: absolute;
+    top: 64px;
+    left: 10%;
+    width: 80%;
+    color: black;
+    background: rgba(43, 51, 63, 1);
+    padding: 10px;
+    border-radius: 8px;
+    transition: visibility 0.3s ease 0s, opacity 0.3s ease 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.vjs-user-inactive .error-window {
+    visibility: hidden;
+    opacity: 0;
+}
+.vjs-user-inactive.vjs-paused .error-window {
+    visibility: visible;
+    opacity: 1;
+}
+
+.vjs-ad-playing .error-window {
+    display: none;
+}
+
+.error-message {
+    color: #fff;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.error-window .error-window-title {
+    font-size: 16px;
+    color: #FFF;
+    margin-top: 6px;
+    margin-left: 1px;
+    display: inline-block;
+}
+
+.error-window .error-window-close {
+    display: inline-block;
+    float: right;
+    color: white;
+    font-size: 1.5em;
+    background: rgba(43, 51, 63, 0);
+    padding: 3px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+figcaption.live-bug {
+    background: #d0202b;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    padding: .4em 1em .3em;
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: "PT Sans",Helvetica,sans-serif;
+    z-index: 1;
+    display: block !important;
+}
+
+.vjs-playing figcaption.live-bug {
+    display: none !important;
+}
+
+/****************************************************
+* plugin and other elements to hide during preroll  *
+****************************************************/
+
+.vjs-ad-playing .vjs-social-share,
+.vjs-ad-playing .vjs-related-carousel-button,
+.vjs-ad-playing .vjs-autoplay-toggle-button,
+.vjs-ad-playing .vjs-flash-captions-button,
+.vjs-ad-playing .vjs-captions-button,
+.vjs-ad-playing .vjs-flash-captions-button,
+.vjs-ad-playing .vjs-related-carousel-holder,
+.vjs-ad-playing .vjs-closed-caption-text,
+.vjs-ad-playing .vjs-live-display,
+.vjs-vast-ad-loading .vjs-social-share,
+.vjs-vast-ad-loading .vjs-related-carousel-button,
+.vjs-vast-ad-loading .vjs-autoplay-toggle-button,
+.vjs-vast-ad-loading .vjs-flash-captions-button,
+.vjs-vast-ad-loading .vjs-captions-button,
+.vjs-vast-ad-loading .vjs-flash-captions-button,
+.vjs-vast-ad-loading .vjs-related-carousel-holder,
+.vjs-vast-ad-loading .vjs-closed-caption-text,
+.vjs-vast-ad-loading .vjs-live-display {
+    display: none !important;
+}
+
+/*************************
+* coming_up_next styles  *
+*************************/
+
+
+.vjs-up-next-container {
+    position: absolute;
+    display: table;
+    left: 0;
+    right: 0;
+    bottom: 160px;
+    padding: 3% 3% 0 3%;
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(43, 51, 63, 0.75);
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+
+    -webkit-transition: height 0.25s ease-in;
+    -moz-transition: height 0.25s ease-in;
+    -ms-transition: height 0.25s ease-in;
+    -o-transition: height 0.25s ease-in;
+    transition: height 0.25s ease-in;
+}
+
+.up-next-section {
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.up-next-title {
+    color: #fff;
+    font-size: 10px;
+}
+
+.countdown-header {
+    color: #fff;
+    font-size: 125%;
+}
+
+.coming-up-next-header {
+    color: #fff;
+}
+
+.up-next-section.table-cell {
+    display:table-cell;
+}
+
+.up-next-section.bordered {
+    border-right: 1px solid rgba(255,255,255,0.5);
+}
+
+.up-next-section.left {
+    padding-right: 3%;
+}
+
+.up-next-section.middle {
+    padding: 0 3%;
+}
+
+.up-next-section.right {
+    padding-left: 3%;
+}
+
+.vjs-up-next-countdown {
+    font-size: 5em;
+}
+
+.vjs-inline-container {
+    display: inline-block;
+    width: 100%;
+}
+
+.vjs-up-next-button.up-next-play-button, .vjs-up-next-button.up-next-cancel-button {
+
+    display: block;
+    padding: 10px;
+    width: 100%;
+    background: rgba(50,50,50,0.5);
+    border: 1px solid #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
+
+.vjs-up-next-button.up-next-play-button {
+    margin-bottom: 15px;
+}
+
+.vjs-up-next-button:hover {
+    background: rgba(100,100,100,0.4);
+}
+
+/*************************
+* END coming_up_next    *
+*************************/
+
+/*************************
+* VAST overlay styles    *
+*************************/
+
+.vjs-nonLinear-overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
+}
+
+.vjs-user-inactive .vjs-nonLinear-overlay {
+    bottom: 4px;
+}
+
+.vjs-user-inactive.vjs-paused .vjs-nonLinear-overlay {
+    bottom: 30px;
+}
+
+.vjs-nonLinear-imgcontainer {
+    position: relative;
+    margin: 0 auto;
+}
+
+.vjs-nonLinear-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.vjs-nonLinear-closeButton {
+    height: 12px;
+    width: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    font-family: Verdana, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/*************************
+* END VAST overlay       *
+*************************/
+
+
+.vjs-caption-settings {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3em;
+    top: initial;
+}
+
+.vjs-caption-settings legend {
+    color: #fff;
+}
+
+/* Hide the native captions button */
+.vod-video .vjs-captions-button {
+    display: none !important;
+}

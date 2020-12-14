@@ -1,1 +1,0 @@
-!function(){var i={fbPixelId:"170901973326506",domain:".complex.com",appId:235,in_eu:!1,ping_activity:!1,snowplow_src:"//cdn.keywee.co/dist/sp-2.9.1.js"};window&&window.kwa&&window.kwa("loadConfig",i)}();

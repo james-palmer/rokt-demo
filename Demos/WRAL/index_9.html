@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" data-scrapbook-source="https://wwwcache.wral.com/presentation/v3/scripts/vendor/titantv/index.html?v=2018-04-06a" data-scrapbook-create="20201212225409639">
+<head><meta charset="UTF-8">
+    <title>What's On - Sample</title>
+    <meta http-equiv="Pragma" content="no-cache">
+    <!--external reference to stylesheet -->
+    <link href="css-1.css" rel="stylesheet" type="text/css">
+    <link href="wral.css" rel="stylesheet" type="text/css">
+
+    <!--external references javascript libraries Cloudfare-->
+    <!--multiple copies of different versions of jQuery can possible create strange behavior-->
+    
+    
+    
+
+    <!--external references javascript libraries bim -->
+     
+    
+
+    <!--internal javascript code -->
+    
+
+</head>
+<body style="margin: 0; padding: 0;">
+    <div style="display: block;float: left;">
+        <!--
+
+          -->
+        <!--internal HTML code that holds the widget -->
+        <div id="includedContent">  
+  
+  
+  
+
+</div>
+        <div style="width:300px" id="firstSection">
+            <div id="BIMAccordDiv" class="content" data-bind="template: { name: &quot;parentAccordianTemplate&quot;, data: Stations}">
+    <div id="programming" class="accordion" data-bind="template: { name: 'childAccordianTemplate', foreach: Station}">
+    <h4 class="unselectable on" data-bind="text: tabName, attr:{'tabId':tabId}" tabid="0">WRAL - On Now</h4>
+    <div class="accordionContent" style="display: block;" loaded="true"><div id="PTNS1"><div data-bind="template: { name: 'parentTabTemplate',data: ChannelList()[0]} ">
+    <table>
+        <tbody data-bind="template: { name: 'childTabTemplate', foreach: ShowList}">
+    <tr>
+      <td width="60" data-bind="text: $root.PrettyTime(AdjustedStartTimeString)">02:30 PM</td>
+      <td class="over" data-bind="css:{info: $root.IsStreaming(WebLink())}">
+      <span class="title" data-bind="text: Title">LPGA Tour Golf</span>
+        <div style="display: none" class="divDescription">
+        <span style="font-weight: bold; font-size:1.22em" data-bind="text: Title">LPGA Tour Golf</span><br>
+          <span data-bind="text: $root.PrettyDate(AdjustedStartDateString)">Saturday, 12/12</span>,
+          <span data-bind="text: $root.PrettyTime(AdjustedStartTimeString)">02:30 PM</span>
+          <span data-bind="text: $root.PrettyDuration(DurationString)">3 hrs 30 min</span>
+          
+          <!-- ko if: WebLink --><!-- /ko --> 
+  
+          <br>
+          <!-- ko if: EpisodeTitle --><!--  /ko --> 
+          <!-- ko if: Repeat --><!--  /ko --> 
+             <!-- ko if: Category -->
+           <span data-bind="text: $root.FormatCategory(Category)">Sports, Women's Golf/LPGA Tournament</span>
+           <br>
+           <!--  /ko --> 
+
+          <span data-bind="text: Description">Ladies Professional Golf Association Tournament</span>
+          <p>[click to close]</p>
+			  </div>
+      </td>    
+     </tr>
+  
+    <tr>
+      <td width="60" data-bind="text: $root.PrettyTime(AdjustedStartTimeString)">06:00 PM</td>
+      <td class="over" data-bind="css:{info: $root.IsStreaming(WebLink())}">
+      <span class="title" data-bind="text: Title">WRAL News Saturday</span>
+        <div style="display: none" class="divDescription">
+        <span style="font-weight: bold; font-size:1.22em" data-bind="text: Title">WRAL News Saturday</span><br>
+          <span data-bind="text: $root.PrettyDate(AdjustedStartDateString)">Saturday, 12/12</span>,
+          <span data-bind="text: $root.PrettyTime(AdjustedStartTimeString)">06:00 PM</span>
+          <span data-bind="text: $root.PrettyDuration(DurationString)">30 min</span>
+          
+          <!-- ko if: WebLink --><!-- /ko --> 
+  
+          <br>
+          <!-- ko if: EpisodeTitle --><!--  /ko --> 
+          <!-- ko if: Repeat -->
+           <span data-bind="text: $root.FormatRepeat(Repeat)">New</span>
+           -  
+           <!--  /ko --> 
+             <!-- ko if: Category -->
+           <span data-bind="text: $root.FormatCategory(Category)">News</span>
+           <br>
+           <!--  /ko --> 
+
+          <span data-bind="text: Description">An up-to-the minute local and national weekend newscast and features of interest in the community, along with timely updates on sports events, local weather conditions and area travel issues are provided by the WRAL Weekend News Team.</span>
+          <p>[click to close]</p>
+			  </div>
+      </td>    
+     </tr>
+  
+    <tr>
+      <td width="60" data-bind="text: $root.PrettyTime(AdjustedStartTimeString)">06:30 PM</td>
+      <td class="over" data-bind="css:{info: $root.IsStreaming(WebLink())}">
+      <span class="title" data-bind="text: Title">NBC Nightly News</span>
+        <div style="display: none" class="divDescription">
+        <span style="font-weight: bold; font-size:1.22em" data-bind="text: Title">NBC Nightly News</span><br>
+          <span data-bind="text: $root.PrettyDate(AdjustedStartDateString)">Saturday, 12/12</span>,
+          <span data-bind="text: $root.PrettyTime(AdjustedStartTimeString)">06:30 PM</span>
+          <span data-bind="text: $root.PrettyDuration(DurationString)">30 min</span>
+          
+          <!-- ko if: WebLink --><!-- /ko --> 
+  
+          <br>
+          <!-- ko if: EpisodeTitle --><!--  /ko --> 
+          <!-- ko if: Repeat --><!--  /ko --> 
+             <!-- ko if: Category -->
+           <span data-bind="text: $root.FormatCategory(Category)">News, Business/Politics/Topical</span>
+           <br>
+           <!--  /ko --> 
+
+          <span data-bind="text: Description">NBC News anchors and correspondents cover developing and headlining events happening across the nation and the globe concerning important social, political and economic issues with in-depth interviews and investigative reports.</span>
+          <p>[click to close]</p>
+			  </div>
+      </td>    
+     </tr>
+  </tbody>
+    </table>  
+  </div></div>
+     </div>
+    <h4 class="unselectable" data-bind="text: tabName, attr:{'tabId':tabId}" tabid="1">WRAL2 - On Now</h4>
+    <div class="accordionContent" style="display: none;">
+     <div class="loadingData"><div>
+    </div>
+ </div></div>
+    <h4 class="unselectable" data-bind="text: tabName, attr:{'tabId':tabId}" tabid="2">WRAL - On Tonight</h4>
+    <div class="accordionContent" style="display: none;">
+     <div class="loadingData"><div>
+    </div>
+ </div></div>
+    <h4 class="unselectable" data-bind="text: tabName, attr:{'tabId':tabId}" tabid="3">WRAL2 - On Tonight</h4>
+    <div class="accordionContent" style="display: none;">
+     <div class="loadingData"><div>
+    </div>
+ </div></div></div>
+    <div class="listingsLink"><a data-bind="attr: { href: gridUrl}" target="_blank" href="http://www.wral.com/wral-tv/tv_schedule/">View all TV Listings</a><span class="arrow">»</span></div>
+  </div>
+        </div>
+        <!--internal HTML code that holds the widget -->
+    </div>
+
+
+</body>
+</html>
