@@ -1,0 +1,36 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * ivyjournal:
+ *   - http://typekit.com/eulas/00000000000000003b9b1900
+ *   - http://typekit.com/eulas/00000000000000003b9b1906
+ *   - http://typekit.com/eulas/00000000000000003b9b1907
+ *
+ * © 2009-2020 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-05-22 02:05:08 UTC"}*/
+
+@import url("p.css");
+
+@font-face {
+font-family:"ivyjournal";
+src:url("l") format("woff2"),url("d") format("woff"),url("a") format("opentype");
+font-display:auto;font-style:normal;font-weight:600;
+}
+
+@font-face {
+font-family:"ivyjournal";
+src:url("l-1") format("woff2"),url("d-1") format("woff"),url("a-1") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"ivyjournal";
+src:url("l-2") format("woff2"),url("d-2") format("woff"),url("a-2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+.tk-ivyjournal { font-family: "ivyjournal",sans-serif; }
