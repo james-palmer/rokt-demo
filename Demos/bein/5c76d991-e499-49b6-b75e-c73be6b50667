@@ -1,0 +1,27 @@
+.minute-tv .title-wrapper { width: 90%; display: inline-block; }
+.minute-tv .package-name { background-color: rgb(255, 255, 255); mix-blend-mode: screen; display: inline-block; font-size: 0.4em; padding: 0.3% 0.8%; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 500; }
+.minute-tv .title { font-size: 0.9em; text-overflow: ellipsis; white-space: nowrap; }
+.minute-tv .title, .minute-tv .title-no-wrap { margin: 0px; font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; color: rgb(255, 255, 255); overflow: hidden; }
+.minute-tv .title-no-wrap { font-size: 0.85em; }
+.minute-tv .mask { overflow: hidden; position: absolute; top: 81%; width: 100%; padding-right: 2%; mix-blend-mode: screen; z-index: 3; }
+.minute-tv .marker { position: absolute; top: 0px; height: 100%; width: 0.7%; max-width: 7px; background-color: rgb(42, 191, 213); z-index: 1; }
+.minute-tv .grad { height: 40%; -webkit-mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); }
+.minute-tv .dark-grad, .minute-tv .grad { position: absolute; width: 100%; bottom: 0px; background: rgb(0, 0, 0); z-index: 2; }
+.minute-tv .dark-grad { height: 100%; -webkit-mask-image: linear-gradient(transparent 20%, rgba(0, 0, 0, 0.25) 45%, rgba(0, 0, 0, 0.5) 62%, rgba(0, 0, 0, 0.8) 75%, rgb(0, 0, 0) 96%); }
+.minute-tv .slider-item:lang(he) { direction: rtl; }
+.minute-tv .lower-third { position: absolute; width: 100%; bottom: 10%; color: rgb(255, 255, 255); letter-spacing: 0.025em; }
+.minute-tv .lower-third-container { line-height: 1.1; height: 20%; font-weight: 300; width: 90%; overflow: hidden; }
+.minute-tv .lower-third-number { z-index: 2; width: 16%; height: 100%; background-color: rgb(38, 187, 216); display: inline-block; position: absolute; text-align: center; padding: 0px; margin: 0px; transform: scaleY(0); transform-origin: 100% 100%; }
+.minute-tv .lower-third-title { display: inline-block; height: 100%; line-height: 1.2em; padding-left: 17%; background: rgb(0, 0, 0); z-index: 1; opacity: 0.9; overflow: hidden; position: absolute; right: 0px; left: 0px; top: 0px; }
+.minute-tv .lower-third-title:lang(en) { text-align: left; direction: ltr; padding-right: 3%; }
+.minute-tv .lower-third-title:lang(he) { text-align: right; direction: rtl; padding-left: 3%; padding-right: 17%; }
+.minute-tv .lower-third-number:lang(he) { right: 0px; }
+.minute-tv .apv-title { font-size: 0.65em; opacity: 1; color: rgb(255, 255, 255); line-height: 1.2; height: 2.4em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden; }
+.minute-tv .apv-title:lang(en) { padding-left: 3%; }
+.minute-tv .apv-title:lang(he) { padding-right: 6%; }
+.minute-tv .apv-number { font-size: 1.2em; font-weight: 400; opacity: 1; color: rgb(255, 255, 255); line-height: 1; top: 50%; position: relative; }
+.minute-tv .apv-number.apv-number-animate { animation: 0.4s ease-out 0.4s 1 alternate none running number-animate; }
+.minute-tv .btn-slider { z-index: 2; display: inline-block; width: 200px; padding: 10px; margin: 10px; border: 0px; background: rgb(239, 239, 239); font-weight: 400; font-size: 14px; }
+.minute-tv .btn-slider-container { display: inline-block; position: relative; width: 100%; margin: 0px auto; text-align: center; }
+.minute-tv .vertical-center { transform: translateY(-50%); top: 50%; position: relative; }
+.minute-tv text.apv-svg-title { text-anchor: start; pointer-events: auto; fill: currentcolor; }
