@@ -105,6 +105,21 @@
 <link rel="icon" href="cropped-ibd-icon-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="https://www.investors.com/wp-content/uploads/2018/03/cropped-ibd-icon-180x180.png">
 <meta name="msapplication-TileImage" content="https://www.investors.com/wp-content/uploads/2018/03/cropped-ibd-icon-270x270.png">
+<!-- ROKT CALENDAR -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src ='https://assets.roktcalendar.com/scripts/widget-loader.min.js';fjs.parentNode.insertBefore(js,fjs);}(document,'script', 'calreply-wjs');</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147226304-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-147226304-1');
+</script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.8.55/css/materialdesignicons.min.css" rel="stylesheet">
+
 
 </head>
 <body class="page-template-default page page-id-5 page-parent wp-custom-logo wp-home" cz-shortcut-listen="true">
@@ -307,18 +322,58 @@
 </a><a href="" class="custom-logo-link" rel="home"><img width="2401" height="182" src="ibd-logo.png" class="custom-logo" alt="Investor's Business Daily" srcset="ibd-logo.png 2401w, ibd-logo-300x23.png 300w, ibd-logo-768x58.png 768w, ibd-logo-1024x78.png 1024w" sizes="(max-width: 2401px) 100vw, 2401px"></a> 
 </div>
 <div class="show-for-large-up medium-3 columns">
-<div class="shopping-cart empty">
-<div class="icon">
-Shopping Cart
-</div>
-<div class="widget-shopping-cart navCart" id="lists">
-Your cart is currently empty.<br> Visit the <a href="https://shop.%27./Roots/Sage/Extras/ibd_get_env_url().'">IBD Store</a> to get started.
-</div>
-</div>
-<label for="queryly_toggle" class="queryly_search_form">
-<img class="queryly_search_button" style="vertical-align:middle;width: 42px;cursor: pointer;float:right;background: #004E8E;padding: 5px;border-radius: 20px;margin: 16px 5px;" src="whitesearchicon.png">
-</label>
-</div>
+	<div>
+		<a id="roktCalendar" href="https://jonathangeller.roktcalendar.com/investors-business-daily-calendar" data-popup="lightbox" data-type="custombutton" data-calreply-binding="true">
+			<div id="calendarCTA">                  
+			<i class="mdi mdi-calendar-plus" id="calendarIcon"></i> 
+			<span id="calendarButtonText">Add IBD to Calendar</span>
+			</div>
+		</a>
+	</div>
+
+<style>
+    #roktCalendar {
+   color: white;
+   font-family: inherit;
+   position: absolute;
+   right:0px;
+
+    }
+   
+    #calendarCTA {
+
+      align-items: center;
+      padding-left: 0px;
+      color: white;
+      background-color: #004E8D;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+	  font-family: inherit;
+	  height: 2.5rem;
+    }
+   
+    #calendarIcon {
+      margin-right: 0.3rem; 
+      align-content: center; 
+      width: 1.4em; 
+	  vertical-align: middle;
+	  font-size: 2rem;
+    }
+
+    #calendarButtonText {
+		  color: white;
+		  font-size: 0.8rem;
+    }
+
+    @media only screen and (min-width: 990px) {
+    #calendarIcon {
+      padding-left: 10px;
+    }
+    }
+</style>
+
+
 </div>
 <div class="show-for-medium-down mobile-icon-nav">
 <i class="fa fa-bars"></i>
