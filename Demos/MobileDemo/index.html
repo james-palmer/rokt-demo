@@ -37,12 +37,20 @@ gtag('config', 'UA-147226304-1');
 
 </head>
 
-<body>
+<body style="
+    display: flex;
+    /*justify-content: center;
+    align-items: top;
+    */
+    flex-direction: column;
+    height: 100vh;
+    zoom:0.8;
+">
 <div class="container" style="width: 90%">
-    
-    <!--Website IFrame-->
-    <div class="row" style="display:flex;">
-        <div class="col-6" style="margin:1rem;">
+    <div class="row" style="display:flex; justify-content: center; align-items: center;">    
+
+        <!--Website IFrame-->
+        <div class="col-4" style="margin:1rem;">
             <div class="pt5">
                 <div id="preview-newwindow" class="text-center" style="margin-bottom:15px;">
                     <div class="preview-outer">
@@ -55,12 +63,12 @@ gtag('config', 'UA-147226304-1');
         </div>
 
         <!-- Text Message -->
-        <div class="row" style="display:flex;">
-            <div class="col-6" style="margin:1rem;" style="display:flex;">
+     
+            <div class="col-4" style="margin:1rem;" style="display:flex;">
                 <div class="pt5">
                     <div id="preview-TextView" class="text-center" style="margin-bottom:15px;">
                         <div class="preview-outer">
-                            <div class="preview-frame" id="textContent" style="position: relative">C
+                            <div class="preview-frame" id="textContent" style="position: relative">
                                 <img src="MuradText.jpeg">
                                 
                                 <!--Overlay
@@ -68,7 +76,7 @@ gtag('config', 'UA-147226304-1');
                                            -->                 
 
                                 <!--Bottom Text-->
-                               <button onclick="showCalApp()" style = "background-color: #E1E1E3; border: none; width: 262px; height: 100px; position:absolute; z-index: 1000; top: 620px; left: 25px; border-radius: 5px; ">
+                               <button onclick="showCalApp()" style = "background-color: #E1E1E3; border: none; width: 262px; height: 100px; position:absolute; z-index: 1000; top: 600px; left: 25px; border-radius: 5px; ">
                                     <span style="font: helvetica Neue; font-size: 16px; color: black; position: absolute; left: 10px; top:1px; text-align: left; vertical-align: middle;">New sale coming up soon! 
                                         <br>
                                         Don't miss out, add to your calendar now <span style="color: #0000FF">https://rokt.it/MuradSale</span></span>
@@ -89,11 +97,11 @@ gtag('config', 'UA-147226304-1');
                     </div>
                 </div>
             </div>
-        </div>
+  
 
     <!-- Calendar View-->
-        <div class="row" style="display:flex;">
-            <div class="col-6" style="margin:1rem;" style="display:flex;">
+
+            <div class="col-4" style="margin:1rem;" style="display:flex;">
                 <div class="pt5">
                     <div id="preview-CalendarView" class="text-center" style="margin-bottom:15px;">
                         <div class="preview-outer">
@@ -121,8 +129,7 @@ gtag('config', 'UA-147226304-1');
                     </div>
                 </div>
             </div>
-        </div>
-
+        
     </div>
 </div>
 </body>
