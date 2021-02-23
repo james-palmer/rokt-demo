@@ -49,13 +49,13 @@ gtag('config', 'UA-147226304-1');
 <div class="container" style="width: 90%">
     <div class="row" style="display:flex; justify-content: center; align-items: center;">    
 
-        <!--Website IFrame-->
-        <div class="col-4" style="margin:1rem;">
+         <!--Website IFrame-->
+         <div class="col-4" style="margin:1rem;">
             <div class="pt5">
                 <div id="preview-newwindow" class="text-center" style="margin-bottom:15px;">
                     <div class="preview-outer">
                         <div class="preview-frame">
-                            <iframe width="377" height="800" frameborder="0" id="previewFrame" src="https://james-palmer.github.io/rokt-demo/Demos/hims/index.html"></iframe>
+                            <iframe width="377" height="800" frameborder="0" id="previewFrame" src="../dime/"></iframe>
                         </div>
                     </div>
                 </div>
@@ -69,26 +69,29 @@ gtag('config', 'UA-147226304-1');
                     <div id="preview-TextView" class="text-center" style="margin-bottom:15px;">
                         <div class="preview-outer">
                             <div class="preview-frame" id="textContent" style="position: relative">
-                                <img src="MuradText.jpeg">
+                                <img src="/site/client/calendar/textMessage.jpeg">
                                 
                                 <!--Overlay
                                 <div style="background-color: black; opacity:0.4; z-index: 1; width: 100%; height: 100%; position: absolute; top:0px;"></div>
-                                           -->                 
-
+                                -->
+                                           <div style = "background-color:  #F6F6F6; color: black; font: helvetica Neue; font-size: 14px; width: 100%; height: 20px; position:absolute; z-index: 1000; top: 95px; ; z-index:100000;  ">
+                                          CLIENT NAME HERE
+                                           </div>
+                                            
                                 <!--Bottom Text-->
-                               <button onclick="showCalApp()" style = "background-color: #E1E1E3; border: none; width: 262px; height: 100px; position:absolute; z-index: 1000; top: 600px; left: 25px; border-radius: 5px; ">
-                                    <span style="font: helvetica Neue; font-size: 16px; color: black; position: absolute; left: 10px; top:1px; text-align: left; vertical-align: middle;">Your virtual doctor appointment is confirmed. 
-                                        <br>
-                                        Add to your calendar now:  <span style="color: #0000FF">https://rokt.it/hims</span></span>
+                               <button onclick="showTextCalApp()" style = "background-color: #E1E1E3; border: none; width: 262px; height: 100px; position:absolute; z-index: 1000; top: 180px; left: 25px; border-radius: 5px; ">
+                                    <span style="font: helvetica Neue; font-size: 16px; color: black; position: absolute; left: 10px; top:5px; text-align: left; vertical-align: middle;">
+                                        Download our calendar by midnight est. to receive exclusive offers + receive 15% off your purchase: 
+                                      <span style="color: #0000FF">https://rokt.it/DIME</span></span>
                                </button>
                             </div>
 
-                            <script> function showCalApp () { document.getElementById("textContent").style.display = "none"
+                            <script> function showTextCalApp () { document.getElementById("textContent").style.display = "none"
                             document.getElementById("textCalApp").style.display = "block"
                             
                              } </script>
                             <div class="preview-frame" id="textCalApp" style="display: none;">
-                                <iframe style="z-index: 1000000" width="377" height="800" frameborder="0" id="previewFrame" src="https://jonathangeller.roktcalendar.com/hims-calendar-21/subscription/subscribe"></iframe>
+                                <iframe style="z-index: 1000000" width="377" height="800" frameborder="0" id="previewFrame" src="https://rokt.it/3pNMwr0"></iframe>
                             </div>
 
 
@@ -97,32 +100,55 @@ gtag('config', 'UA-147226304-1');
                     </div>
                 </div>
             </div>
+
   
 
             <!-- Twitter View-->
 
-            <div class="col-4" style="margin:1rem;" style="display:flex;">
+            <div class="col-4" style="margin:1rem; background-color: white;" style="display:flex;">
                 <div class="pt5">
-                    <div id="preview-CalendarView" class="text-center" style="margin-bottom:15px;">
+                    <div id="preview-TwitterView" class="text-center" style="margin-bottom:15px;">
                         <div class="preview-outer">
-                            <div class="preview-frame" style="position: relative">
-                                <img src="TwitterTemplate.png">
+                            <div class="preview-frame"  id="twitterContent" style="position: relative">
+                                <img src="twitterView.png">
                                 
-                                <!--Overlay-->
-                                <div style="background-color: black; opacity:0.4; z-index: 1; width: 100%; height: 100%; position: absolute; top:0px;"></div>
-                                                            
+                                <!--Overlay
+                                <div style="background-color: black; opacity:0.4; z-index: 1; width: 100%; height: 50%; position: absolute; top:380px;"></div>
+                                -->
+                                
+                                
                                 <!--Top Event-->
-                                <div style = "background-color: orange; width: 82%; height: 50px; position:absolute; z-index: 1000; top: 155px; right:10px; border-radius: 5px; ">
-                                
+                                <div style = "background-color: white; width: 200px; height: 20px; position:absolute; z-index: 1000; top: 66px; left:78px; border-radius: 5px; font-size: 16px; text-align: left; ">
+                                <span style="font-weight: bold;">
+                                    DIME Beauty
+                                </span> 
+                                <span style="color: grey">
+                                    @DIME
+                                </span>
                                 </div>
 
-    
 
-                                <!--Bottom Event-->
-                                <div style = "background-color: orange; width: 82%; height: 100px; position:absolute; z-index: 1000; top: 580px; right:10px; border-radius: 5px; ">
-                                    <span style="font-weight: bold; color: white; position: absolute; left: 10px; top:1px; text-align: left; vertical-align: middle;">👩🏻‍⚕️🥼🩺Digital Doctor's Appointment 👩🏻‍⚕️🥼🩺</span>
-                                    <span style="color: white; position: absolute; left: 10px; top:18px; text-align: left; vertical-align: middle;">Join at https://www.forhims.com/asxafysa</span>
-                                </div>
+                                <button onclick="showTwitterCalApp()" style = "background-color: white; width: 74%; height: 90px; position:absolute; z-index: 1000; top: 88px; right:20px; border: none ">
+                                    <span style="font: helvetica Neue; font-size: 16px; color: black; position: absolute; left: 10px; top:5px; text-align: left; vertical-align: middle;">
+                                        Download our calendar by midnight est. to receive exclusive offers + receive 15% off your purchase: 
+                                      <span style="color: #0000FF">https://rokt.it/DIME</span></span>
+                               </button>
+
+                               <button onclick="showTwitterCalApp()" style = "background-color: green;  opacity: 0; width: 74%; height: 160px; position:absolute; z-index: 1000; top: 180px; right:20px; border: none ">
+                    
+                           </button>
+
+                            </div>
+
+                            <script> function showTwitterCalApp () { document.getElementById("twitterContent").style.display = "none"
+                            document.getElementById("twitterCalApp").style.display = "block"
+                            
+                             } </script>
+
+                            <div class="preview-frame" id="twitterCalApp" style="display: none;">
+                                <iframe style="z-index: 1000000" width="377" height="800" frameborder="0" id="previewFrame" src="https://rokt.it/3pNMwr0"></iframe>
+                            </div>
+
                             </div>
                         </div>
                     </div>
@@ -163,6 +189,11 @@ gtag('config', 'UA-147226304-1');
         
     </div>
 </div>
+
+<img style="position: fixed; bottom: 0px;height: 30rem; z-index: -1222220000; right:20px" id="connector" src="/site/client/calendar/Rokt-Connector-RGB-Beetroot.png">
+
+<button type="button" onClick="window.location.reload();" style="position: fixed; top: 20px;height: 4rem;  right:20px; border: none" ><img src="/site/client/calendar/Refresh_icon.png" style="height:3rem"></button>
+
 </body>
  
     

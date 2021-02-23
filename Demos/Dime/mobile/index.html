@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8">
+<title>Mobile Demo | Rokt Calendar</title>
+
+<link rel="icon" href="favicon-rokt-calendar.png" type="image/png" sizes="16x16"> 
+<link href="css.css" type="text/css" rel="stylesheet">
+
+<link href="css-1.css" type="text/css" rel="stylesheet">
+
+<link href="css-2.css" type="text/css" rel="stylesheet">
+
+
+<style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147226304-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-147226304-1');
+  
+</script>
+
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src ='https://assets.roktcalendar.com/scripts/widget-loader.min.js';fjs.parentNode.insertBefore(js,fjs);}(document,'script', 'calreply-wjs');</script>
+
+
+</head>
+
+<body style="background-color:  #EAEAEA;
+    display: flex;
+    /*justify-content: center;
+    align-items: top;
+    */
+    flex-direction: column;
+    height: 100vh;
+    zoom:0.8;
+">
+<div class="container" style="width: 90%">
+    <div class="row" style="display:flex; justify-content: center; align-items: center;">    
+
+           <!--Website IFrame-->
+           <div class="col-4" style="margin:1rem;">
+            <div class="pt5">
+                <div id="preview-newwindow" class="text-center" style="margin-bottom:15px;">
+                    <div class="preview-outer">
+                        <div class="preview-frame">
+                            <iframe width="377" height="800" frameborder="0" id="previewFrame" src="../"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text Message -->
+     
+            <div class="col-4" style="margin:1rem;" style="display:flex;">
+                <div class="pt5">
+                    <div id="preview-TextView" class="text-center" style="margin-bottom:15px;">
+                        <div class="preview-outer">
+                            <div class="preview-frame" id="textContent" style="position: relative">
+                                <img src="textMessage.jpeg">
+                                
+                                <!--Overlay
+                                <div style="background-color: black; opacity:0.4; z-index: 1; width: 100%; height: 100%; position: absolute; top:0px;"></div>
+                                -->
+                                           <div style = "background-color:  #F6F6F6; color: black; font: helvetica Neue; font-size: 14px; width: 100%; height: 20px; position:absolute; z-index: 1000; top: 95px; ; z-index:100000;  ">
+                                          DIME
+                                           </div>
+                                            
+                                <!--Bottom Text-->
+                               <button onclick="showCalApp()" style = "background-color: #E1E1E3; border: none; width: 262px; height: 100px; position:absolute; z-index: 1000; top: 180px; left: 25px; border-radius: 5px; ">
+                                    <span style="font: helvetica Neue; font-size: 16px; color: black; position: absolute; left: 10px; top:5px; text-align: left; vertical-align: middle;">Add DIME to your calendar by midnight EST tonight to receive exclusive offers + receive 15% off your purchase: 
+                                      <span style="color: #0000FF">https://rokt.it/DIME</span></span>
+                               </button>
+                            </div>
+
+                            <script> function showCalApp () { document.getElementById("textContent").style.display = "none"
+                            document.getElementById("textCalApp").style.display = "block"
+                            
+                             } </script>
+                            <div class="preview-frame" id="textCalApp" style="display: none;">
+                                <iframe style="z-index: 1000000" width="377" height="800" frameborder="0" id="previewFrame" src="https://rokt.it/3pNMwr0"></iframe>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+    </div>
+</div>
+
+<img style="position: fixed; bottom: 0px;height: 30rem; z-index: -100000; right:20px" id="connector" src="Rokt-Connector-RGB-Beetroot.png">
+
+<button type="button" onClick="window.location.reload();" style="position: fixed; top: 20px;height: 4rem;  right:20px; border: none" ><img src="Refresh_icon.png" style="height:3rem"></button>
+
+</body>
+ 
+    
+<footer>
+    <p class="copyright fl">© Rokt Calendar</p>
+        <a class="footer-logo footer-logo-calreply fr" href="https://rokt.com/rokt-calendar/" target="_blank" title="Powered By Rokt Calendar (ver 1.210.0)"></a> 
+</footer>
+    
+    
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div class="colorpicker" id="collorpicker_986"><div class="colorpicker_color" style="background-color: rgb(255, 0, 0);"><div><div style="left: 150px; top: 0px;"></div></div></div><div class="colorpicker_hue"><div style="top: 150px;"></div></div><div class="colorpicker_new_color" style="background-color: rgb(255, 0, 0);"></div><div class="colorpicker_current_color" style="background-color: rgb(255, 0, 0);"></div><div class="colorpicker_hex"><input type="text" maxlength="6" size="6" value="ff0000"></div><div class="colorpicker_rgb_r colorpicker_field"><input type="text" maxlength="3" size="3" value="255"><span></span></div><div class="colorpicker_rgb_g colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_rgb_b colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_hsb_h colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_hsb_s colorpicker_field"><input type="text" maxlength="3" size="3" value="100"><span></span></div><div class="colorpicker_hsb_b colorpicker_field"><input type="text" maxlength="3" size="3" value="100"><span></span></div><div class="colorpicker_submit"></div></div><div class="colorpicker" id="collorpicker_535"><div class="colorpicker_color" style="background-color: rgb(255, 0, 0);"><div><div style="left: 150px; top: 0px;"></div></div></div><div class="colorpicker_hue"><div style="top: 150px;"></div></div><div class="colorpicker_new_color" style="background-color: rgb(255, 0, 0);"></div><div class="colorpicker_current_color" style="background-color: rgb(255, 0, 0);"></div><div class="colorpicker_hex"><input type="text" maxlength="6" size="6" value="ff0000"></div><div class="colorpicker_rgb_r colorpicker_field"><input type="text" maxlength="3" size="3" value="255"><span></span></div><div class="colorpicker_rgb_g colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_rgb_b colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_hsb_h colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_hsb_s colorpicker_field"><input type="text" maxlength="3" size="3" value="100"><span></span></div><div class="colorpicker_hsb_b colorpicker_field"><input type="text" maxlength="3" size="3" value="100"><span></span></div><div class="colorpicker_submit"></div></div><div class="colorpicker" id="collorpicker_603"><div class="colorpicker_color" style="background-color: rgb(255, 0, 0);"><div><div style="left: 150px; top: 0px;"></div></div></div><div class="colorpicker_hue"><div style="top: 150px;"></div></div><div class="colorpicker_new_color" style="background-color: rgb(255, 0, 0);"></div><div class="colorpicker_current_color" style="background-color: rgb(255, 0, 0);"></div><div class="colorpicker_hex"><input type="text" maxlength="6" size="6" value="ff0000"></div><div class="colorpicker_rgb_r colorpicker_field"><input type="text" maxlength="3" size="3" value="255"><span></span></div><div class="colorpicker_rgb_g colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_rgb_b colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_hsb_h colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_hsb_s colorpicker_field"><input type="text" maxlength="3" size="3" value="100"><span></span></div><div class="colorpicker_hsb_b colorpicker_field"><input type="text" maxlength="3" size="3" value="100"><span></span></div><div class="colorpicker_submit"></div></div><div class="colorpicker" id="collorpicker_704"><div class="colorpicker_color" style="background-color: rgb(255, 0, 0);"><div><div style="left: 150px; top: 0px;"></div></div></div><div class="colorpicker_hue"><div style="top: 150px;"></div></div><div class="colorpicker_new_color" style="background-color: rgb(255, 0, 0);"></div><div class="colorpicker_current_color" style="background-color: rgb(255, 0, 0);"></div><div class="colorpicker_hex"><input type="text" maxlength="6" size="6" value="ff0000"></div><div class="colorpicker_rgb_r colorpicker_field"><input type="text" maxlength="3" size="3" value="255"><span></span></div><div class="colorpicker_rgb_g colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_rgb_b colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_hsb_h colorpicker_field"><input type="text" maxlength="3" size="3" value="0"><span></span></div><div class="colorpicker_hsb_s colorpicker_field"><input type="text" maxlength="3" size="3" value="100"><span></span></div><div class="colorpicker_hsb_b colorpicker_field"><input type="text" maxlength="3" size="3" value="100"><span></span></div><div class="colorpicker_submit"></div></div></body>
+</html>
