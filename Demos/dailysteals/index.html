@@ -5420,12 +5420,30 @@ span.icon.icon-arrow-down {
         </div>
         
   
-          <div style="text-align:center; padding-bottom:40px;">
+          <div id="calendarLarge" style="text-align:center; padding-bottom:40px;">
                     <a data-popup="lightbox" data-type="custombutton" data-calreply-binding="true" href="https://rokt.it/3u6JlOE">
                     <button class="btn-hover color" style="height:35px; position:absolute;right:0px">Add dailysteals to your Calendar</button>
                     </a>
           </div>
-       
+          <div id="calendarMid" style="text-align:center; padding-bottom:40px; display:none">
+            <a data-popup="lightbox" data-type="custombutton" data-calreply-binding="true" href="https://rokt.it/3u6JlOE">
+              <button class="btn-hover color" style="height:35px; position:absolute;right:0px">     <span class="mdi mdi-calendar-plus"></span> dailysteals calendar</button>
+          </a>
+        </div>
+
+        <style>
+          @media screen and (max-width: 1300px) {
+    #calendarLarge {
+        display: none !important;
+      }
+      #calendarMid {
+        display: flex !important;
+        width: 200px;
+      }
+    }
+
+          </style>
+
            </a>
       </div>
     </div>
